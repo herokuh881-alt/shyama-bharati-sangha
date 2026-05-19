@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>শ্রী শ্রী শ্যামা ভারতী সংঘ</title>
+
+  <!-- Bengali Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Bengali:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      font-family:'Noto Serif Bengali', serif;
+      background:#fff8f0;
+      color:#2d1b0f;
+      overflow-x:hidden;
+    }
+
+    html{
+      scroll-behavior:smooth;
+    }
+
+    /* HERO SECTION */
+
+    header{
+      width:100%;
+      height:100vh;
+
+      background:
+      linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+      url('images/mandir.jpg');
+
+      background-size:cover;
+      background-position:center;
+      background-attachment:fixed;
+
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+
+      padding:20px;
+    }
+
+    .hero{
+      animation:fadeIn 2s ease;
+    }
+
+    .hero h1{
+      font-size:65px;
+      color:#ffd700;
+      margin-bottom:25px;
+      text-shadow:3px 3px 12px black;
+    }
+
+    .hero p{
+      color:white;
+      font-size:24px;
+      line-height:1.8;
+    }
+
+    /* SECTION */
+
+    section{
+      padding:90px 10%;
+    }
+
+    .section-title{
+      text-align:center;
+      font-size:42px;
+      color:#b22222;
+      margin-bottom:60px;
+      position:relative;
+    }
+
+    .section-title::after{
+      content:'';
+      width:120px;
+      height:4px;
+      background:#ff9800;
+
+      position:absolute;
+      left:50%;
+      bottom:-18px;
+
+      transform:translateX(-50%);
+      border-radius:20px;
+    }
+
+    /* ABOUT */
+
+    .about{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:60px;
+      align-items:center;
+    }
+
+    .about img{
+      width:100%;
+      border-radius:25px;
+      box-shadow:0 10px 30px rgba(0,0,0,0.2);
+      transition:0.5s;
+    }
+
+    .about img:hover{
+      transform:scale(1.03);
+    }
+
+    .about-text{
+      font-size:22px;
+      line-height:2;
+    }
+
+    /* GALLERY */
+
+    .gallery-section{
+      background:#fff2e2;
+    }
+
+    .gallery{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+      gap:30px;
+    }
+
+    .gallery img{
+      width:100%;
+      height:350px;
+      object-fit:cover;
+
+      border-radius:20px;
+
+      box-shadow:0 10px 25px rgba(0,0,0,0.15);
+
+      transition:0.5s;
+    }
+
+    .gallery img:hover{
+      transform:scale(1.05);
+    }
+
+    /* LOCATION */
+
+    .location-box{
+      background:white;
+      padding:50px;
+      border-radius:25px;
+      text-align:center;
+
+      box-shadow:0 10px 25px rgba(0,0,0,0.1);
+    }
+
+    .location-box p{
+      font-size:24px;
+      line-height:2;
+      margin-bottom:30px;
+    }
+
+    .btn{
+      display:inline-block;
+      padding:16px 40px;
+      background:#b22222;
+      color:white;
+      text-decoration:none;
+
+      border-radius:50px;
+
+      font-size:20px;
+
+      transition:0.4s;
+    }
+
+    .btn:hover{
+      background:#ff9800;
+      transform:translateY(-4px);
+    }
+
+    /* FOOTER */
+
+    footer{
+      background:#2d1b0f;
+      color:white;
+      text-align:center;
+
+      padding:35px;
+
+      font-size:18px;
+      line-height:1.8;
+    }
+
+    /* ANIMATION */
+
+    @keyframes fadeIn{
+
+      from{
+        opacity:0;
+        transform:translateY(40px);
+      }
+
+      to{
+        opacity:1;
+        transform:translateY(0);
+      }
+    }
+
+    /* MOBILE */
+
+    @media(max-width:900px){
+
+      header{
+        background-attachment:scroll;
+      }
+
+      .hero h1{
+        font-size:38px;
+      }
+
+      .hero p{
+        font-size:18px;
+      }
+
+      .section-title{
+        font-size:32px;
+      }
+
+      .about{
+        grid-template-columns:1fr;
+      }
+
+      .about-text{
+        font-size:18px;
+      }
+
+      .location-box p{
+        font-size:18px;
+      }
+
+      .gallery img{
+        height:250px;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- HERO SECTION -->
+
+  <header>
+
+    <div class="hero">
+
+      <h1>শ্রী শ্রী শ্যামা ভারতী সংঘ</h1>
+
+      <p>
+        মা কালী শক্তির প্রতীক। <br>
+        ভক্তি, শান্তি ও আধ্যাত্মিকতার পবিত্র স্থান।
+      </p>
+
+    </div>
+
+  </header>
+
+  <!-- ABOUT SECTION -->
+
+  <section>
+
+    <h2 class="section-title">
+      মন্দির সম্পর্কে
+    </h2>
+
+    <div class="about">
+
+      <img src="images/mandir.jpg" alt="মন্দির">
+
+      <div class="about-text">
+
+        <p>
+          শ্রী শ্রী শ্যামা ভারতী সংঘ একটি পবিত্র কালী মন্দির,
+          যেখানে প্রতিদিন ভক্তরা মা কালীর আশীর্বাদ গ্রহণ করতে আসেন।
+        </p>
+
+        <br>
+
+        <p>
+          এই মন্দিরটি গ্রামের মানুষের ভক্তি,
+          সংস্কৃতি ও ঐতিহ্যের প্রতীক।
+          উৎসবের সময় এখানে এক পবিত্র পরিবেশ সৃষ্টি হয়।
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- GALLERY -->
+
+  <section class="gallery-section">
+
+    <h2 class="section-title">
+      মন্দির গ্যালারি
+    </h2>
+
+    <div class="gallery">
+
+      <img src="images/mandir.jpg" alt="">
+      <img src="images/mandir.jpg" alt="">
+      <img src="images/mandir.jpg" alt="">
+
+    </div>
+
+  </section>
+
+  <!-- LOCATION -->
+
+  <section>
+
+    <h2 class="section-title">
+      মন্দিরের লোকেশন
+    </h2>
+
+    <div class="location-box">
+
+      <p>
+        আমাদের পবিত্র মন্দিরে আপনাকে স্বাগতম। <br>
+        নিচের বাটনে ক্লিক করে Google Map এ লোকেশন দেখতে পারবেন।
+      </p>
+
+      <a href="https://maps.app.goo.gl/5y9aWHHJVLxe4HcdA"
+         target="_blank"
+         class="btn">
+
+         লোকেশন দেখুন
+
+      </a>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    © ২০২৬ শ্রী শ্রী শ্যামা ভারতী সংঘ <br>
+    সকল অধিকার সংরক্ষিত
+
+  </footer>
+
+</body>
+</html>
